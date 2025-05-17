@@ -4,8 +4,8 @@ import { TypeAnimation } from "react-type-animation";
 const Home = () => {
   return (
     <>
-      <div className="bg-gray-800 h-[567px] p-35 mt-15 w-full">
-        <div className="flex gap-3 font-bold text-3xl text-white ">
+      <div data-aos="fade-in" className="bg-gray-800 h-[567px] p-35 mt-15 w-full">
+        <div  className="flex gap-3 font-bold text-3xl text-white ">
           <h1>Hello I'm </h1>
           <label htmlFor="">
             Sujan Pokharel-
@@ -41,13 +41,14 @@ const Home = () => {
 
           <div className="  ">
             <img
-              className="h-69 w-75 rounded-l-full rounded-r-full ml-20 my-[-5rem]                                      8 "
+            data-aos="fade-up"
+              className="h-69 w-75 rounded-l-full rounded-r-full ml-20 my-[-5rem] "
               src="public\profile.png"
               alt="profile-pic"
             />
           </div>
         </div>
-        <button className=" flex ml-9  font-bold text-white bg-purple-300 w-fit  rounded-md h-8 border-b-4 border-purple-300 hover:border-purple-300 hover:bg-purple-100 hover:text-purple-400 rounded-2xl \">
+        <button className=" flex ml-9  font-bold text-white bg-purple-300 w-fit  rounded-md h-8 border-b-4 border-purple-300 hover:border-purple-300 hover:bg-purple-100 hover:text-purple-400 rounded-2xl ">
           Download Cv <FaArrowAltCircleDown className="mt-[5px] ml-1" />
         </button>
       </div>

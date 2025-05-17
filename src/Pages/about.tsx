@@ -1,6 +1,14 @@
 import { PiSuitcaseSimpleLight } from "react-icons/pi";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const About = () => {
+    useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration
+          // only animate once
+    });
+  }, []);
   const experience = [
     {
       key: 1,
@@ -59,16 +67,16 @@ const About = () => {
         <div className="flex flex-row-reverse gap-9">
             {/* this is exp */}
           <div className="">
-            <h2 className="text-2xl text-left mb-8 font-bold text-white">Experience</h2>
+            <h2 className="text-2xl text-left mb-8 font-bold text-white " >Experience</h2>
             {experience.map((exp, key) => (
               <div
                 key={key}
                 className="pl-8 pb-8 border-l mb-5 border-white relative"
               >
-                <div className="h-5 w-5 p-1 flex items-center justify-center rounded-full left-[-1.3rem] 0border-1 border-white translate-1/2 top-[-1rem] absolute">
+                <div data-aos="fade-in" className="h-5 w-5 p-1 flex items-center justify-center rounded-full left-[-1.3rem] 0border-1 border-white translate-1/2 top-[-1rem] absolute">
                   <PiSuitcaseSimpleLight className="text-xs text-purple-300 text-center" />
                 </div>
-                <div className="border p-3 md:p-8 rounded-lg border-white bg-purple-400/50 mb-3">
+                <div data-aos="fade-in" className="border p-3 md:p-8 rounded-lg border-white bg-purple-400/50 mb-3">
                   <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
                     <h2 className="text-xl text-left font-bold text-white">{exp.title}</h2>
                     <p className="text-xs border px-2 rounded-2xl border-white text-white font-medium " >
@@ -105,8 +113,8 @@ const About = () => {
                 className="pl-8 pb-8  border-white  relative"
               >
                 
-                <div className="border p-3 md:p-8 rounded-lg border-white bg-purple-400/50  mb-3">
-                  <div className="flex justify-between items-center flex-wrap gap-2">
+                <div data-aos="fade-in" className="border p-3 md:p-8 rounded-lg border-white bg-purple-400/50  mb-3">
+                  <div  className="flex justify-between items-center flex-wrap gap-2">
                     <h2 className="text-xl text-white font-bold text-left">{edu.title}</h2>
                     <p className="text-xs border h-fit px-2 rounded-2xl border-white text-white font-medium mb-3">
                       {edu.duration}

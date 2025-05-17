@@ -6,10 +6,13 @@ import Home from "./Pages/home";
 import Projects from "./Pages/projects";
 
 function App() {
+   
+
   return (
     <>
-      <Nav />
-      <div id="/" className="  flex justify-center items-center">
+      <div className="">
+        <Nav />
+      <div id="/" className="  flex justify-center items-center" >
         <Home/>
       </div>
       <div id="/about" className=" flex justify-center items-center">
@@ -20,6 +23,7 @@ function App() {
       </div>
       <div id="/contact" className="flex justify-center items-center">
         <Contact/>
+      </div>
       </div>
     </>
   );
