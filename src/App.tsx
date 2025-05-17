@@ -1,57 +1,28 @@
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import './App.css'
-import Nav from './Component/nav'
-import Home from './Pages/home'
-import About from './Pages/about'
-import Projects from './Pages/projects'
-import Contact from './Pages/contact'
-const router=createBrowserRouter([{
-  path:"/",
-  element:(
-  <>
-    <Nav/>
-    <Home/>
-  </>
-  )
-}
-,
-{
-  
-  path:"/about",
-  element:(
-  <>
-    <Nav/>
-    <About/>
-  </>
-  )
-},
-{
-  
-  path:"/projects",
-  element:(
-  <>
-    <Nav/>
-    <Projects/>
-  </>
-  )
-},
-{
-  
-  path:"/contact",
-  element:(
-  <>
-    <Nav/>
-    <Contact/>
-  </>
-  )
-}
-])
+import Nav from "./Component/nav";
+import About from "./Pages/about";
+import Contact from "./Pages/contact";
+import Home from "./Pages/home";
+import Projects from "./Pages/projects";
+
 function App() {
-
   return (
-    <RouterProvider router={router}/>
-  )
+    <>
+      <Nav />
+      <div id="/" className="  flex justify-center items-center">
+        <Home/>
+      </div>
+      <div id="/about" className=" flex justify-center items-center">
+      <About/>
+      </div>
+      <div id="/projects" className=" flex justify-center items-center">
+         <Projects/>
+      </div>
+      <div id="/contact" className="flex justify-center items-center">
+        <Contact/>
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
