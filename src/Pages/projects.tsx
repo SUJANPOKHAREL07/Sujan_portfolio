@@ -1,7 +1,15 @@
+import Cards from "../Component/card"
+
 const Projects=()=>{
     return(
         <>
-        <h1>this is projects</h1>
+        <div  className="bg-gray-800 w-full h-screen">
+         <div className=""data-aos="fade-in">
+            <label htmlFor="" className="text-white font-bold text-5xl flex justify-center mb-8">PROJECTS</label>
+               <Cards/>
+        </div>
+     
+        </div>
         </>
     )
 }
