@@ -36,7 +36,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-   <div className=" w-full bg-gray-800  ">
+   <div className=" w-full bg-gray-800 h-screen ">
      <h2 className="text-4xl font-bold text-white mb-3 flex justify-center ">Contact Me</h2>
      <div className="  grid grid-cols-2    ">
        
