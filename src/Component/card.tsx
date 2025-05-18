@@ -30,18 +30,19 @@ const Cards = () => {
             key={key}
             className="border text-white  border-gray-100/80 rounded-xl hover:bg-zinc-900/60 w-full transistion-color overflow-hidden  "
           >
-            <div className="bg-purple-300/20 text-white h-full">
-              <div className="bg-gray-500 p-2">
+            <div className="bg-purple-300/20 text-white h-full space-y-2">
+              <div className="bg-gray-500 ">
                 <img
                   src={ele.projectImg}
                   alt="project-Image"
-                  className="w-full"
+                  className="w-full h-[10rem] object-cover "
                 />
               </div>
-              <div className="flex justify-center">
-                <h1 className="font-bold text-[#dab2ff]">{ele.projectTitle}</h1>
+              <div className=" justify-center">
+                <h1 className="font-bold text-[#dab2ff] pl-[9rem]">{ele.projectTitle}</h1>
+                <p className="p-2">{ele.projectDescription}</p>
               </div>
-              <p className="p-2">{ele.projectDescription}</p>
+              
             </div>
           </div>
         ))}

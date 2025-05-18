@@ -2,6 +2,7 @@
 import Nav from "./Component/nav";
 import About from "./Pages/about";
 import Contact from "./Pages/contact";
+import Footer from "./Pages/footer";
 import Home from "./Pages/home";
 import Projects from "./Pages/projects";
 
@@ -24,6 +25,7 @@ function App() {
       <div id="/contact" className="flex justify-center items-center">
         <Contact/>
       </div>
+      <Footer/>
       </div>
     </>
   );
