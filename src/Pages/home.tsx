@@ -12,9 +12,9 @@ const Home = () => {
             <label className="text-2xl text-purple-300  font-bold">
               <TypeAnimation
                 sequence={[
-                  " Frontend developer",
+                  " Full-Stack Developer",
                   120,
-                  " Backend developer",
+                  " MERN-Stack Developer",
                   120,
                 ]}
                 wrapper="span"
@@ -48,7 +48,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <button className=" flex ml-9  font-bold text-white bg-purple-300 w-fit  rounded-md h-8 border-b-4 border-purple-300 hover:border-purple-300 hover:bg-purple-100 hover:text-purple-400 rounded-2xl ">
+        <button className=" flex ml-9  font-bold text-white bg-purple-300 w-fit  rounded-md h-8 border-b-4 border-purple-300 hover:border-purple-300 hover:bg-purple-100 hover:text-purple-400 ">
           Download Cv <FaArrowAltCircleDown className="mt-[5px] ml-1" />
         </button>
       </div>
