@@ -12,7 +12,7 @@ const Cards = () => {
       projectTitle: "Ghumaari",
       projectDescription:
         "Hotel booking website with provide hotel owner to list their hotels and attract new tourist",
-      projectImg: "public/hartbazar.png",
+      projectImg: "public/ghumari.png",
     },
     {
       key: 3,
@@ -30,7 +30,7 @@ const Cards = () => {
             key={key}
             className="border text-white  border-gray-100/80 rounded-xl hover:bg-zinc-900/60 w-full transistion-color overflow-hidden  "
           >
-            <div className="bg-purple-50/50 text-black h-full">
+            <div className="bg-purple-300/20 text-white h-full">
               <div className="bg-gray-500 p-2">
                 <img
                   src={ele.projectImg}
