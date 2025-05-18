@@ -19,7 +19,7 @@ const Cards = () => {
       projectTitle: "VutungTung",
       projectDescription:
         "It's a vehicle rental website where a user can rent the vehiclw he/she want and the owner send theh vehicle to the requested locqation",
-      projectImg: "public/hartbazar.png",
+      projectImg: "public/vutungtung.png",
     },
   ];
   return (
