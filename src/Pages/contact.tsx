@@ -13,15 +13,27 @@
 //     )
 // }
 // export default Contact
+import { useForm } from '@formspree/react';
 import React, { useState } from 'react';
 
+
 const ContactForm: React.FC = () => {
-  const [formData, setFormData] = useState({
+  type formdata={
+    name:string,
+    email:string,
+    message:string
+  }
+  const [formData, setFormData] = useState<formdata>({
     name: '',
     email: '',
     message: '',
   });
-
+   const [state, handleSubmit] = useForm("mqaqjpbj");
+  if (state.succeeded) {
+      alert("message sent")
+ 
+  
+   }
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
@@ -29,11 +41,7 @@ const ContactForm: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // You can add logic to send data to a server or API here
-  };
+ 
 
   return (
    <div className=" w-full bg-gray-800 h-screen ">
@@ -49,7 +57,7 @@ const ContactForm: React.FC = () => {
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
-            className="w-full h-full"
+            className="w-full h-full rounded-lg"
           ></iframe>
         </div>
 
@@ -102,6 +110,7 @@ const ContactForm: React.FC = () => {
           </div>
 
           <button
+          
             type="submit"
             className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-xl transition duration-200"
           >
