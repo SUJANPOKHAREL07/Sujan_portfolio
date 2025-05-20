@@ -5,7 +5,7 @@ const Modal = ({ children }) => {
     <div className="relative z-50">
       <div className="fixed bg-black/40 inset-0">
         <div className="fixed inset-0 flex justify-center items-center p-4">
-          <div className="flex items-center justify-center w-full">
+          <div className="flex items-center justify-center w-full ">
             {children}
           </div>
         </div>

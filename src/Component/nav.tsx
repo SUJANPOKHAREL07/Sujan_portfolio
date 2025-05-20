@@ -68,7 +68,7 @@ function Nav() {
       {hireClick &&(
         <div className="">
           <Modal>
-              <div className="bg-white w-11/12 sm:w-2/3 md:w-1/2 lg:w-1/3 rounded-md p-4">
+              <div className="bg-purple-200 w-11/12 sm:w-2/3 md:w-1/2 lg:w-1/3 rounded-md p-4">
             <div className="flex justify-end">
               <IoMdCloseCircleOutline
                 onClick={() => setHire(false)}
