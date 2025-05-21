@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <div className="">
+      <div className=" ">
         <Nav />
       <div id="/" className="  flex justify-center items-center" >
         <Home/>
