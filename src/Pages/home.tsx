@@ -122,7 +122,7 @@ const Home = () => {
       {/* Download CV Button */}
       <div className="mt-1 md:mt-[-3rem] flex justify-center md:justify-start">
         <a
-          href="/public/SujanPokharel_CV.pdf"
+          href="public/Sujan-Pokharel-cv.pdf"
           download
           className="flex items-center gap-2 px-6 py-2 bg-purple-300 text-white font-semibold rounded-md border-b-5 border-purple-300 hover:bg-purple-100 hover:text-purple-400 transition-all"
         >
