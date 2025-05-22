@@ -24,29 +24,32 @@ const Cards = () => {
   ];
   return (
     <>
-      <div className="py-5  px-10 gap-10 w-fit shadow-2xl grid grid-cols-3 ">
-        {cardElements.map((ele, key) => (
-          <div
-            key={key}
-            className="border text-white  border-gray-100/80 rounded-xl hover:bg-zinc-900/60 w-full transistion-color overflow-hidden  "
-          >
-            <div className="bg-purple-300/20 text-white h-full space-y-2">
-              <div className="bg-gray-500 ">
-                <img
-                  src={ele.projectImg}
-                  alt="project-Image"
-                  className="w-full h-[10rem] object-cover "
-                />
-              </div>
-              <div className=" justify-center">
-                <h1 className="font-bold text-[#dab2ff] pl-[9rem]">{ele.projectTitle}</h1>
-                <p className="p-2">{ele.projectDescription}</p>
-              </div>
-              
-            </div>
-          </div>
-        ))}
+      
+        <div className="py-5 px-5 sm:px-10 gap-10 w-full shadow-2xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+  {cardElements.map((ele, key) => (
+    <div
+      key={key}
+      className="border text-white border-gray-100/80 rounded-xl hover:bg-zinc-900/60 w-full transition-colors overflow-hidden"
+    >
+      <div className="bg-purple-300/20 text-white h-full space-y-2">
+        <div className="bg-gray-500">
+          <img
+            src={ele.projectImg}
+            alt="project-Image"
+            className="w-full h-[10rem] object-cover"
+          />
+        </div>
+        <div className="justify-center">
+          <h1 className="font-bold text-[#dab2ff] text-center md:text-left px-4">
+            {ele.projectTitle}
+          </h1>
+          <p className="p-2">{ele.projectDescription}</p>
+        </div>
       </div>
+    </div>
+  ))}
+</div>
+
     </>
   );
 };
