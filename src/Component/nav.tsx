@@ -8,8 +8,8 @@ function Nav() {
   const [hireClick, setHire] = useState(false);
   const [isOpen, setisOpen] = useState(false);
   return (
-    <nav>
-      <div className="bg-gray-800 flex md:px-15 px-5 items-center justify-between  ">
+    <nav className="">
+      <div className="bg-gray-800 flex md:px-15 px-5 items-center justify-between    ">
         <h1 className="font-bold text-2xl py-4 text-white  ">Sujan Pokharel</h1>
         <div className="md:flex hidden space-x-8  font-semibold">
           <Link
@@ -73,7 +73,7 @@ function Nav() {
         </div>
       </div>
       {isOpen && (
-        <div className=" bg-gray-800 text-right font-semibold space-y-2 flex flex-col z-50 mt-13 inset-0 h-20 fixed px-12 ">
+        <div className=" bg-gray-800  md:hidden text-right font-semibold space-y-2 flex flex-col z-15  inset-0 h-[115px]  px-12 ">
           <Link
             to="/"
             smooth={true}
