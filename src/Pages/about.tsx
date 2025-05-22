@@ -62,93 +62,82 @@ const About = () => {
   ];
   return (
     <>
-      <section className="px-15 bg-gray-800  ">
-        {/*  */}
-        <div className="flex flex-row-reverse gap-9">
-            {/* this is exp */}
-          <div className="">
-            <h2 className="text-2xl text-left mb-8 font-bold text-white " >Experience</h2>
-            {experience.map((exp, key) => (
-              <div
-                key={key}
-                className="pl-8 pb-8 border-l mb-5 border-white relative"
-              >
-                <div data-aos="fade-in" className="h-5 w-5 p-1 flex items-center justify-center rounded-full left-[-1.3rem] 0border-1 border-white translate-1/2 top-[-1rem] absolute">
-                  <PiSuitcaseSimpleLight className="text-xs text-purple-300 text-center" />
-                </div>
-                <div data-aos="fade-in" className="border p-3 md:p-8 rounded-lg border-white bg-purple-400/50 mb-3">
-                  <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
-                    <h2 className="text-xl text-left font-bold text-white">{exp.title}</h2>
-                    <p className="text-xs border px-2 rounded-2xl border-white text-white font-medium " >
-                      {exp.started}
-                    </p>
-                  </div>
-                  <p className="mb-1 text-xs text-white text-left">
-                    {exp.subheading}
-                  </p>
-                  <p className="text-white text-sm text-left mb-3">
-                    {exp.description}
-                  </p>
-                  <div className="flex flex-wrap items-center gap-2">
-                    <p className="text-xs border px-2 rounded-2xl font-medium text-blue border-blue-500/50 bg-green-500/50  text-gray-50/80">
-                      {exp.keytag1}
-                    </p>
-                    <p className="text-xs  px-2 rounded-2xl font-medium text-gray-50/80 bg-red-500/50">
-                      {exp.keytag2}
-                    </p>
-                    <p className="text-xs  font-medium px-2 rounded-2xl  text-blue bg-gray-900/50 text-gray-50/80 ">
-                      {exp.keytag3}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
+    
+      <section className="px-5 md:px-16 bg-gray-800">
+  <div className="flex flex-col md:flex-row-reverse gap-9"> {/* ✅ responsive flex direction */}
+    {/* Experience */}
+    <div className="w-full md:w-1/2"> {/* ✅ responsive width */}
+      <h2 className="text-2xl text-left mb-8 font-bold text-white">Experience</h2>
+      {experience.map((exp, key) => (
+        <div key={key} className="pl-8 pb-8 border-l mb-5 border-white relative">
+          <div
+            data-aos="fade-in"
+            className="h-5 w-5 p-1 flex items-center justify-center rounded-full left-[-1.3rem] absolute"
+          >
+            <PiSuitcaseSimpleLight className="text-xs text-purple-300 text-center" />
           </div>
-        {/* thi is education */}
-        <div>
-            <h2 className="text-2xl text-white text-left mb-8 font-bold">Education</h2>
-            {education.map((edu, index) => (
-              <div
-                key={index}
-                className="pl-8 pb-8  border-white  relative"
-              >
-                
-                <div data-aos="fade-in" className="border p-3 md:p-8 rounded-lg border-white bg-purple-400/50  mb-3">
-                  <div  className="flex justify-between items-center flex-wrap gap-2">
-                    <h2 className="text-xl text-white font-bold text-left">{edu.title}</h2>
-                    <p className="text-xs border h-fit px-2 rounded-2xl border-white text-white font-medium mb-3">
-                      {edu.duration}
-                    </p>
-                  </div>
-                  <p className="mb-1 text-white  text-xs  text-left">
-                    {edu.institution}
-                  </p>
-                  <p className="text-white text-sm text-left mb-3">
-                    {edu.description}
-                  </p>
-                  <div className="flex gap-2 flex-wrap">
-                    {edu.tags.map((tag, i) => (
-                      <p
-                        key={i}
-                        className={`text-xs  px-2 rounded-2xl font-extralight ${
-                          i === 0
-                            ?  "border-blue-500/50 bg-green-500/50 text-gray-50/80 font-medium"
-                            : i === 1
-                            ? "font-medium text-gray-50/80 bg-red-500/50    "
-                            : "text-blue font-medium bg-gray-900/50 text-gray-50/80"
-                        }`}
-                      >
-                        {tag}
-                      </p>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div data-aos="fade-in" className="border p-3 md:p-8 rounded-lg border-white bg-purple-400/50 mb-3">
+            <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
+              <h2 className="text-xl text-left font-bold text-white">{exp.title}</h2>
+              <p className="text-xs border px-2 rounded-2xl border-white text-white font-medium">
+                {exp.started}
+              </p>
+            </div>
+            <p className="mb-1 text-xs text-white text-left">{exp.subheading}</p>
+            <p className="text-white text-sm text-left mb-3">{exp.description}</p>
+            <div className="flex flex-wrap items-center gap-2">
+              <p className="text-xs border px-2 rounded-2xl font-medium text-blue border-blue-500/50 bg-green-500/50 text-gray-50/80">
+                {exp.keytag1}
+              </p>
+              <p className="text-xs px-2 rounded-2xl font-medium text-gray-50/80 bg-red-500/50">
+                {exp.keytag2}
+              </p>
+              <p className="text-xs font-medium px-2 rounded-2xl text-blue bg-gray-900/50 text-gray-50/80">
+                {exp.keytag3}
+              </p>
+            </div>
           </div>
         </div>
-        
-      </section>
+      ))}
+    </div>
+
+    {/* Education */}
+    <div className="w-full md:w-1/2"> {/* ✅ responsive width */}
+      <h2 className="text-2xl text-white text-left mb-8 font-bold">Education</h2>
+      {education.map((edu, index) => (
+        <div key={index} className="pl-8 pb-8 border-white relative">
+          <div data-aos="fade-in" className="border p-3 md:p-8 rounded-lg border-white bg-purple-400/50 mb-3">
+            <div className="flex justify-between items-center flex-wrap gap-2">
+              <h2 className="text-xl text-white font-bold text-left">{edu.title}</h2>
+              <p className="text-xs border h-fit px-2 rounded-2xl border-white text-white font-medium mb-3">
+                {edu.duration}
+              </p>
+            </div>
+            <p className="mb-1 text-white text-xs text-left">{edu.institution}</p>
+            <p className="text-white text-sm text-left mb-3">{edu.description}</p>
+            <div className="flex gap-2 flex-wrap">
+              {edu.tags.map((tag, i) => (
+                <p
+                  key={i}
+                  className={`text-xs px-2 rounded-2xl font-extralight ${
+                    i === 0
+                      ? "border-blue-500/50 bg-green-500/50 text-gray-50/80 font-medium"
+                      : i === 1
+                      ? "font-medium text-gray-50/80 bg-red-500/50"
+                      : "text-blue font-medium bg-gray-900/50 text-gray-50/80"
+                  }`}
+                >
+                  {tag}
+                </p>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
     </>
   );
 };
