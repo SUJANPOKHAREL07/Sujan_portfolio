@@ -45,7 +45,6 @@ A personal portfolio showcasing my skills, projects, and experience—built with
    yarn dev
    ```
    Visit `http://localhost:3000` (or whichever port shows in the console)
-   ```
 
 
 
